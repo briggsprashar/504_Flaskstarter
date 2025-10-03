@@ -7,231 +7,83 @@ app = Flask(__name__)
 def home():
     return """
     <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-gray-900 text-gray-300 font-sans max-w-4xl mx-auto my-12 p-8 rounded-xl shadow-lg shadow-black/70">
 <head>
-  <meta charset="utf-8" />
-  <title>Deploy Flask Starter Kit on Azure VM - Sophisticated Grey</title>
-  <style>
-    /* Sophisticated Minimalistic Grey Theme:
-       Dark grey background with subtle gradients, muted text,
-       elegant typography and spacious layout for professional look */
-
-    body {
-      background-color: #2f3237; /* Soft dark grey */
-      color: #b0b3b8; /* Muted light grey for text */
-      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 36px 48px;
-      line-height: 1.7;
-      border-radius: 10px;
-      box-shadow:
-        0 1px 4px rgba(0,0,0,0.3),
-        inset 0 0 50px #3a3f47;
-      user-select: text;
-      background-image: linear-gradient(135deg, #31353b 25%, #2e3035 75%);
-    }
-
-    h1, h2, h3 {
-      font-weight: 700;
-      margin-top: 2.8em;
-      margin-bottom: 0.6em;
-      color: #a0a4b0;
-      letter-spacing: 0.05em;
-      user-select: text;
-    }
-    h1 {
-      font-size: 3.2em;
-      border-bottom: 3px solid #494e57;
-      padding-bottom: 0.3em;
-      letter-spacing: 0.1em;
-      text-shadow: 0 0 4px #4b5361;
-    }
-    h2 {
-      font-size: 1.9em;
-      border-bottom: 1.3px solid #444950;
-      padding-bottom: 0.2em;
-      text-shadow: 0 0 2px #394048;
-    }
-
-    p {
-      font-size: 1.15em;
-      margin: 1.2em 0;
-      color: #a8abb0;
-      max-width: 720px;
-      user-select: text;
-      text-shadow: 0 0 1px #262a2f;
-    }
-
-    ol {
-      margin-left: 1.6em;
-      margin-bottom: 2em;
-      font-size: 1.1em;
-      color: #a8abb0;
-      user-select: text;
-    }
-    li {
-      margin: 0.6em 0;
-      line-height: 1.5;
-    }
-
-    code {
-      background-color: #3d4149;
-      padding: 0.3em 0.6em;
-      border-radius: 6px;
-      font-family: 'Fira Mono', Consolas, Monaco, monospace;
-      font-size: 0.95em;
-      color: #7db9e8;
-      user-select: text;
-      box-shadow:
-        inset 0 0 8px #2a2e35;
-    }
-
-    a {
-      color: #7db9e8;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      user-select: text;
-    }
-    a:hover {
-      color: #a8c9f8;
-      text-decoration: underline;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #484f59;
-      margin: 3.8em 0;
-      user-select: none;
-      box-shadow: inset 0 0 10px #2a2e34;
-    }
-
-    .narrative {
-      padding-left: 1.5em;
-      border-left: 4px solid #7db9e8;
-      margin-top: 3.8em;
-      color: #bbbfc5;
-      font-style: normal;
-      font-size: 1.13em;
-      line-height: 1.6;
-      user-select: text;
-      text-shadow: 0 0 2px #2c323a;
-    }
-  </style>
+  <meta charset="utf-8"/>
+  <title>Deploy Flask Starter Kit on Azure VM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 selection:bg-blue-700 selection:text-gray-100">
 
-<h1>Deploying the Flask Starter Kit on Azure VM</h1>
+  <header class="mb-8 text-center">
+    <h1 class="text-4xl font-extrabold tracking-wide text-gray-100 drop-shadow-lg mb-1 border-b-4 border-blue-800 pb-2">Deploying the Flask Starter Kit on Azure VM</h1>
+    <p class="text-blue-400 text-lg italic tracking-wide">There are many routes to get to Dublin. I took this route!</p>
+  </header>
 
-<h2>Step 1: Create an Azure Virtual Machine (VM)</h2>
-<ol>
-  <li>Sign in to the <a href="https://portal.azure.com" target="_blank" rel="noopener">Azure Portal</a> and start a new VM creation.</li>
-  <li>Choose Ubuntu or preferred Linux distribution and select required resources.</li>
-</ol>
+  <main class="flex flex-col md:flex-row gap-8 mb-12">
 
-<h2>Step 2: Create a Public IP Address</h2>
-<ol>
-  <li>During VM setup, create or specify a Public IP address.</li>
-  <li>Set IP allocation as <code>Static</code> to maintain a consistent address.</li>
-</ol>
+    <section class="flex-1 bg-gray-800 rounded-lg p-6 shadow-inner shadow-black/50 flex flex-col">
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2 drop-shadow-sm">Azure VM Setup</h2>
+      <ol class="list-decimal list-inside space-y-3 text-gray-400 text-base">
+        <li>Sign in to the 
+          <a href="https://portal.azure.com" target="_blank" class="text-blue-400 hover:text-blue-600 underline transition">Azure Portal</a> and start a new VM.</li>
+        <li>Select Ubuntu or another Linux distribution.</li>
+        <li>Create/assign a <b class="text-blue-400">Static</b> Public IP for consistent access.</li>
+        <li>Add an inbound rule in Network Security Group for TCP port <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">5003</code>.</li>
+      </ol>
+    </section>
 
-<h2>Step 3: Configure Port 5003 for Flask Application</h2>
-<ol>
-  <li>In the VM’s Network Security Group (NSG), add an inbound rule.</li>
-  <li>Allow TCP traffic on port <code>5003</code> to enable external access.</li>
-</ol>
+    <section class="flex-1 bg-gray-800 rounded-lg p-6 shadow-inner shadow-black/50 flex flex-col">
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2 drop-shadow-sm">Deploy Flask Kit</h2>
+      <ol class="list-decimal list-inside space-y-3 text-gray-400 text-base">
+        <li><b>SSH</b> into VM: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">ssh user@public-ip</code></li>
+        <li>Update system: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">sudo apt update -y</code></li>
+        <li>Install Python venv: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">sudo apt install python3.12-venv -y</code></li>
+        <li>Create/activate venv: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">python3 -m venv venv</code>, <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">source venv/bin/activate</code></li>
+        <li>Clone repo:<br><code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">git clone https://github.com/hantswilliams/HHA-504-2025-FlaskStarter.git</code><br><code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">cd HHA-504-2025-FlaskStarter</code></li>
+        <li>Install dependencies: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">pip install -r requirements.txt</code></li>
+        <li>Run app: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">python3 app.py</code></li>
+        <li>Access: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">http://&lt;Public-IP&gt;:5003</code></li>
+      </ol>
+    </section>
 
-<hr />
+    <section class="flex-1 bg-gray-800 rounded-lg p-6 shadow-inner shadow-black/50 flex flex-col">
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2 drop-shadow-sm">Management &amp; Security</h2>
+      <ol class="list-decimal list-inside space-y-3 text-gray-400 text-base">
+        <li>Deactivate Python env: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">deactivate</code></li>
+        <li>Close SSH: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">exit</code>, verify: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">ps aux | grep ssh</code></li>
+        <li>Remove unneeded files: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">rm -rf /path/to/files</code></li>
+        <li>Clean SSH/private data:</li>
+        <ul>
+          <li><code class="bg-gray-700 px-1 rounded text-blue-400 font-mono text-sm">ls -al ~/.ssh/</code>, <code class="bg-gray-700 px-1 rounded text-blue-400 font-mono text-sm">rm -rf ~/.ssh/*</code>, <code class="bg-gray-700 px-1 rounded text-blue-400 font-mono text-sm">ssh-add -D</code></li>
+        </ul>
+          <li>Clear history: <code class="bg-gray-700 px-1 rounded text-blue-400 font-mono text-sm">history -c</code> (bash), <code class="bg-gray-700 px-1 rounded text-blue-400 font-mono text-sm">&gt; ~/.zsh_history</code> (zsh)</li>
+        <li>Review logs: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">log show --predicate 'eventMessage contains "sshd"' --info</code></li>
+        <li>Close terminal: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">Ctrl+D</code></li>
+      </ol>
+    </section>
 
-<h2>Step 4: Deploy Flask Starter Kit from Mac Terminal</h2>
-For a Windows terminal the commands and process will be different.
-<ol>
-  <li>
-    <strong>Connect to your VM via SSH:</strong><br />
-    <code>ssh user@public-ip-address</code><br />
-    Confirm your location with <code>pwd</code>.
-  </li>
-  <li>
-    <strong>Update your system packages:</strong><br />
-    <code>sudo apt update -y</code> (may take a moment)
-  </li>
-  <li>
-    <strong>Check Python version and install virtual environment support:</strong><br />
-    <code>python3 --version</code><br />
-    <code>sudo apt install python3.12-venv -y</code>
-  </li>
-  <li>
-    <strong>Create and activate a virtual environment:</strong><br />
-    <code>python3 -m venv venv</code><br />
-    <code>source venv/bin/activate</code> (your prompt will show <code>(venv)</code>)
-  </li>
-  <li>
-    <strong>Clone the Flask Starter Kit repository:</strong><br />
-    <code>git clone "GITHUB REPO URL"</code><br />
-    <code>cd (VM Folder representing the github repo) </code>
-  </li>
-  <li>
-    <strong>Install required dependencies:</strong><br />
-    <code>pip install -r requirements.txt</code>
-  </li>
-  <li>
-    <strong>Run the Flask application:</strong><br />
-    <code>python3 app.py</code>
-  </li>
-  <li>
-    <strong>Open a browser and navigate to:</strong><br />
-    <code>http://&lt;Public-IP&gt;:5003</code>
-  </li>
-  <li>
-    <strong>When finished, deactivate and disconnect:</strong><br />
-    <code>deactivate</code> to exit the Python environment<br />
-    <code>exit</code> to close the SSH session.
-  </li>
-  <li>
-    <strong>Verify active SSH connections:</strong><br />
-    <code>ps aux | grep ssh</code>
-  </li>
-  <li>
-    <strong>Optional cleanup steps:</strong><br />
-    Remove unneeded files:<br />
-    <code>rm -rf /path/to/files</code>
-  </li>
-  <li>
-    <strong>Remove SSH artifacts from local machine:</strong>
-    <ul>
-      <li><code>ls -al ~/.ssh/</code></li>
-      <li><code>rm -rf ~/.ssh/*</code></li>
-      <li><code>ssh-add -D</code></li>
-      <li>Clear terminal history:<br /><code>history -c</code> (bash) or<br /><code>&gt; ~/.zsh_history</code> (zsh)</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Review logs and restart terminal as needed:</strong><br />
-    <code>log show --predicate 'eventMessage contains "sshd"' --info</code> (Ctrl+C to stop)
-  </li>
-  <li>
-    <strong>Close terminal session:</strong><br />
-    Press <code>Ctrl+D</code> then close the terminal window.
-  </li>
-</ol>
+  </main>
 
-<hr />
+  <section class="border-l-4 border-blue-700 pl-6 mb-12 text-gray-400 space-y-4 text-lg leading-relaxed">
+    <h2 class="text-gray-200 text-2xl font-semibold drop-shadow">VM Management in Healthcare Informatics</h2>
+    <p>
+      In today’s US healthcare environment, setting up and managing virtual machines isn’t just a technical task—it’s about giving care teams the tools to handle sensitive data and keep up with ever-changing IT policies and regulations. The process can feel daunting, especially as organizations strive for interoperability across countless systems, with federal incentives pushing for better data exchange and privacy.
+    </p>
+    <p>
+      Deploying apps in the cloud, like a Python Flask demo, highlights both the promise and realities of modern IT. While remote access, easy scaling, and automation are game changers, cost pressures and gaps in digital resources remain real hurdles—particularly for safety net providers and clinics serving marginalized populations. The right VM strategy can make it easier to stay compliant, keep expenses predictable, and tailor solutions for different communities.
+    </p>
+    <p>
+      Navigating these issues means not just meeting technical standards, but also recognizing where IT can foster equity and where it may unintentionally widen the divide. That’s why a thoughtful approach to VM management can go a long way—helping teams deliver care more efficiently, protect patient information, and adapt quickly to new policy or technology shifts.
+    </p>
+  </section>
 
-<div class="narrative">
-  <h2>VM Management in Health Informatics</h2>
-  <p>
-    Virtual Machines provide the backbone of scalable and secure infrastructure vital to health informatics — enabling sensitive data processing, collaborative development, and rapid deployment of healthcare solutions.
-  </p>
-  <p>
-    This exercise exemplifies the seamless integration of cloud VM provisioning, secure remote access from Apple devices, and version-controlled deployment using Python Flask applications. By mastering these workflows, health informatics professionals can ensure compliance, agility, and precision in managing healthcare IT ecosystems.
-  </p>
-  <p>
-    Effective VM management can foster help with better decision making to accelerate innovation and dependable delivery of health services even when many extraneous variables play a deciding role.
-</div>
+  <footer class="border-t border-gray-700 pt-4 text-center italic text-gray-500 text-sm max-w-4xl mx-auto">
+    <small>This code was generated using a LLM, refined and tested through hands-on steps with Flask deployment.</small>
+  </footer>
+  <p class="text-center text-gray-600 text-xs mt-2 mb-8">Created by: Briggs Prashar</p>
 
-<footer>
-  <small>The original HTML code was generated using a LLM after multiple prompting and after adding my own steps listed after various iterations of the whole Flask Starter demo process. The final HTML code was edited and tweaked.</small>
-</footer>
+  <p class="text-center text-gray-700 font-semibold uppercase tracking-widest mb-6 select-none">HHA 504</p>
 
 </body>
 </html>
