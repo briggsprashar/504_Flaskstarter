@@ -1,7 +1,5 @@
 .env
 .venv=1
 *.html
-.vscode
-*.json
-
-DS_Store
+.vscode/
+.DS_Store
