@@ -1,4 +1,5 @@
 .env
 .venv=1
 *.html
-.vscode/
+.vscode
+*.json
