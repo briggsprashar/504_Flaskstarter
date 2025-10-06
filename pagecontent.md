@@ -1,7 +1,7 @@
-# Deploy Flask Starter Kit on Azure VM
+# Deploy Flask Starter Kit on Azure VM (Apple OS 12+)
 
   - SSH into VM from local terminal       
-     > `ssh -i user@public-ip`
+     > `ssh user@public-ip`
 
   - Update system
     > `sudo apt update`
