@@ -1,5 +1,34 @@
 # Flask Deployment Confirmations
 
+## Videos
+
+<details>
+  <summary>Video 1: Azure VM ☁️</summary>  
+ 
+<br />
+
+<div>
+  <a href="https://www.loom.com/share/7651ee0f2b9242ae8211d40198849806" target="_blank" style="float: left;">
+    <img style="max-width:100px;" src="https://cdn.loom.com/sessions/thumbnails/7651ee0f2b9242ae8211d40198849806-43d290c58ee666d3-full-play.gif" />
+  </a>
+  <div style="clear: both;"></div>
+</div>
+</details>
+<br />
+
+<details>
+  <summary>Video 2: SSH Terminal config and app deployment ☁️</summary>  
+ (To be updated)
+<br />
+
+<div>
+  <a href="url" target="_blank" style="float: left;">
+    <img style="max-width:100px;" src="img" />
+  </a>
+  <div style="clear: both;"></div>
+</div>
+</details>
+
 ### Create Azure VM
 
 <details>
