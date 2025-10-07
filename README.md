@@ -2,18 +2,24 @@
 
 ## Videos
 
+> Attempted to embed an iframe but could not because, for security reasons, both VSCODE and Github disallow certain raw HTML tags including `iframe`.
+
 <details>
   <summary>Video 1: Azure VM ☁️</summary>  
- 
 <br />
-
 <div>
   <a href="https://www.loom.com/share/7651ee0f2b9242ae8211d40198849806" target="_blank" style="float: left;">
     <img style="max-width:100px;" src="https://cdn.loom.com/sessions/thumbnails/7651ee0f2b9242ae8211d40198849806-43d290c58ee666d3-full-play.gif" />
   </a>
   <div style="clear: both;"></div>
 </div>
+
+<br />
+
+> Though the video was truncated at 5 minutes by loom, it captures the relevant content.
+
 </details>
+
 <br />
 
 <details>
