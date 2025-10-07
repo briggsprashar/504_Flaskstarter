@@ -4,6 +4,8 @@
 
 > Attempted to embed an iframe but could not because, for security reasons, both VSCODE and Github disallow certain raw HTML tags including `iframe`.
 
+> The `target="_blank"` attribute, that opens the video in a new tab, is ignored from the html code for both video. It seems Github disallows it.
+
 <details>
   <summary>Video 1: Azure VM ☁️</summary>  
 <br />
