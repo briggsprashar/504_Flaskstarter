@@ -3,6 +3,10 @@
   - SSH into VM from local terminal       
      > `ssh user@public-ip`
 
+     with private key
+     > `ssh -i /path/to/private-key user@public-ip`
+
+
   - Update system
     > `sudo apt update`
         

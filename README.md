@@ -182,4 +182,4 @@ In Azure, under Virtual machines List, select **Stop** under virtual machine con
 
 #### All commands on the webpage display at 
 
-> 40.67.149.37:5003
+> xx.xx.xxx.xx:5003
