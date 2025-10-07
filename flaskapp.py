@@ -41,7 +41,7 @@ def home():
         <li>Install Python venv: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">sudo apt install python3.12-venv -y</code></li>
         <li>Create/activate venv: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">python3 -m venv venv</code>, <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">source venv/bin/activate</code></li>
         <li>Clone repo:<br><code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">git clone https://github.com/hantswilliams/HHA-504-2025-FlaskStarter.git</code><br><code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">cd HHA-504-2025-FlaskStarter</code></li>
-        <li>Install dependencies: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">pip install -r requirements.txt</code></li>
+        <li>Install dependencies: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">pip3 install -r requirements.txt</code></li>
         <li>Run app: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">python3 app.py</code></li>
         <li>Access: <code class="bg-gray-700 px-1.5 rounded text-blue-400 font-mono text-sm">http://&lt;Public-IP&gt;:5003</code></li>
       </ol>
