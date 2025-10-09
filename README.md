@@ -258,6 +258,8 @@ Terminate the connection with the VM on local terminal with `CTRL + C` followed 
 
 </details>
 
+<br />
+
 <details open>
   <summary>17. Stop Azure VM </summary>  
 
@@ -276,3 +278,21 @@ All terminal commands were listed in the webpage displayed (bullet 13 above) wit
 > Port: 40.67.149.37:5003
 
 Screenhots evidence the full lifecycle. I will try and make the video again though.
+
+</details>
+
+<h2 style="color:Green;">Custom domain</h2>
+
+<details open>
+  <summary>18. Free domain via Github </summary>  
+
+<br />
+
+> Not done yet
+
+- Configure a DNS A record pointing your domain to the VM’s public IP.
+- Verify that http://<yourdomain>:5003 resolves to your app.
+- Screenshot of domain working.
+
+<br />
+</details>
