@@ -1,5 +1,14 @@
 # Flask Deployment Confirmations
 
+<details>
+  <summary>Design comment</summary>  
+<br />
+
+> GitHub's Markdown sanitization will strip out colors from H2 headings security reasons. If color was permitted, the readme would have looked like the image below.
+
+![Sudo Updates](flask_images/flask_H2color.png)
+
+</details>
 
 <h2 style="color:Green;">Videos</h2>
 
