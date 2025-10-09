@@ -26,7 +26,9 @@
 
 <details>
   <summary>Video 2: SSH Terminal config and app deployment ☁️</summary>  
- (To be updated)
+ 
+Instead of the video the screenshots will showcase the full lifecycle. I will try and attempt to upload the video at somepoint again.
+
 <br />
 
 <div>
@@ -84,20 +86,32 @@
 
 ### Local terminal
 
+> The flask started kit was deployed many times. So many ports were used. The screenshots might have different ports. Each screenshot will indicate the port. 
+
+<br />
+
 <details>
   <summary>5. Connect to VM via SSH</summary>  
+
+<br />
+
+> Fask1 > port: 40.67.149.37
 
 <br />
 
 ![Connect to VM via SSH](flask_images/2connected2VM.png)
 
 </details>
+
 <br />
 
 <details>
   <summary>6. Sudo Updates</summary>  
 
 <br />
+
+> Fask1 > port: 40.67.149.37
+
 
 ![Sudo Updates](flask_images/3updatesuccessful.png)
 
@@ -108,6 +122,8 @@
   <summary>7. Update Python</summary>  
 
 <br />
+
+> Fask1 > port: 40.67.149.37
 
 ![Update Python](flask_images/4updatepython.png)
 
@@ -120,6 +136,8 @@
 
 <br />
 
+> Fask1 > port: 40.67.149.37
+
 ![Create environment](flask_images/5pythonenvironmentset.png)
 
 </details>
@@ -130,6 +148,8 @@
   <summary>9. Clone to Github Repo & create local path </summary>  
 
 <br />
+
+> Fask1 > port: 40.67.149.37
 
 ![Clone to Github Repo](flask_images/6gitclone.png)
 
@@ -142,6 +162,8 @@
 
 <br />
 
+> Fask1 > port: 40.67.149.37
+
 ![Install requirements](flask_images/7installflask.png)
 
 </details>
@@ -150,7 +172,10 @@
 
 <details>
   <summary>11. App Running </summary>  
+
 <br />
+
+> Fask1 > port: 40.67.149.37
 
 ![App Running](flask_images/8apprunning.png)
 
@@ -159,7 +184,10 @@
 
 <details>
   <summary>12. URL Status </summary>  
+
 <br />
+
+> This may be from a another deployment iteration.
 
 ![URL Status](flask_images/10urlstatuscodes.png)
 
@@ -169,7 +197,10 @@
 
 <details>
   <summary>13. Webpage display </summary>  
+
 <br />
+
+> Fask1 > port: 40.67.149.37
 
 ![Webpage display](flask_images/9webpageconfirmationonport500.png)
 
@@ -182,6 +213,8 @@
 
 <br />
 
+> Fask1 > port: 40.67.149.37
+
 ![Connected to Azure shell](flask_images/10.1connectedtoazureshell.png)
 
 </details>
@@ -192,6 +225,8 @@
   <summary>15. Azure status check prohibited</summary>  
 
 <br />
+
+> Fask1 > port: 40.67.149.37
 
 ![Access denied](flask_images/11azureshell_forbiddenaction.png)
 
@@ -217,6 +252,12 @@ In Azure, under Virtual machines List, select **Stop** under virtual machine con
 
 </details>
 
-#### All commands on the webpage display at 
+### Terminal commands 
 
-> xx.xx.xxx.xx:5003
+All terminal commands were listed in the webpage displayed (bullet 13 above) with the vm running. 
+
+> VM name: Fask1
+
+> Port: 40.67.149.37:5003
+
+Screenhots evidence the full lifecycle. I will try and make the video again though.
