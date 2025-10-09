@@ -1,10 +1,12 @@
 # Flask Deployment Confirmations
 
-## Videos
+
+<h2 style="color:Green;">Videos</h2>
+
 
 > Attempted to embed an iframe but could not because, for security reasons, both VSCODE and Github disallow certain raw HTML tags including `iframe`.
 
-> The `target="_blank"` attribute, that opens the video in a new tab, is ignored from the html code for both video. It seems Github disallows it.
+> The `target="_blank"` attribute, that opens the video in a new tab, is ignored from the html code for both videos. It seems Github disallows it.
 
 <details>
   <summary>Video 1: Azure VM ☁️</summary>  
@@ -33,13 +35,15 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 <div>
   <a href="url" target="_blank" style="float: left;">
-    <img style="max-width:100px;" src="img" />
+    <img style="max-width:100px;" src="img" alt="SSH terminal video comes here"/>
   </a>
   <div style="clear: both;"></div>
 </div>
 </details>
 
-### Create Azure VM
+
+<h2 style="color:Green;">Create Azure VM</h2>
+
 
 <details>
   <summary>1. Deploy Azure VM</summary>  
@@ -63,7 +67,9 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 <br />
 </details>
 
-### Configure Azure VM
+## Configure Azure VM
+
+<h2 style="color:Green;">Create Azure VM</h2>
 
 <details>
   <summary>3. Port Accessible from source IPs</summary>  
@@ -84,7 +90,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Local terminal
+<h2 style="color:Green;">Local terminal</h2>
 
 > The flask started kit was deployed many times. So many ports were used. The screenshots might have different ports. Each screenshot will indicate the port. 
 
@@ -129,7 +135,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Environment
+<h2 style="color:Green;">Environment</h2>
 
 <details>
   <summary>8. Create environment</summary>  
@@ -142,7 +148,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Github
+<h2 style="color:Green;">Github</h2>
 
 <details>
   <summary>9. Clone to Github Repo & create local path </summary>  
@@ -168,7 +174,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Run Python App
+<h2 style="color:Green;">Run Python App</h2>
 
 <details>
   <summary>11. App Running </summary>  
@@ -206,7 +212,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Confirmation
+<h2 style="color:Green;">Confirmation</h2>
 
 <details>
   <summary>14. Azure Shell</summary>  
@@ -232,7 +238,7 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 </details>
 
-### Cleanup
+<h2 style="color:Green;">Cleanup</h2>
 
 <details open>
   <summary>16. Cleanup local machine </summary>  
@@ -252,7 +258,7 @@ In Azure, under Virtual machines List, select **Stop** under virtual machine con
 
 </details>
 
-### Terminal commands 
+<h2 style="color:Green;">Terminal commands</h2>
 
 All terminal commands were listed in the webpage displayed (bullet 13 above) with the vm running. 
 
