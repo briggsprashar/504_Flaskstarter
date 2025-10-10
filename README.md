@@ -112,6 +112,10 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 > Fask1 > port: 40.67.149.37
 
+```bash
+ssh user@public-ip
+```
+
 <br />
 
 ![Connect to VM via SSH](flask_images/2connected2VM.png)
@@ -127,6 +131,10 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 > Fask1 > port: 40.67.149.37
 
+```bash
+sudo apt update -y
+```
+
 
 ![Sudo Updates](flask_images/3updatesuccessful.png)
 
@@ -139,6 +147,11 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 <br />
 
 > Fask1 > port: 40.67.149.37
+
+```bash
+pip install python3
+```
+
 
 ![Update Python](flask_images/4updatepython.png)
 
@@ -153,6 +166,11 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 > Fask1 > port: 40.67.149.37
 
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
 ![Create environment](flask_images/5pythonenvironmentset.png)
 
 </details>
@@ -165,6 +183,11 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 <br />
 
 > Fask1 > port: 40.67.149.37
+
+```bash
+git clone repo url
+cd folder
+```
 
 ![Clone to Github Repo](flask_images/6gitclone.png)
 
@@ -179,6 +202,10 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 
 > Fask1 > port: 40.67.149.37
 
+```bash
+pip install -r requirements.txt
+```
+
 ![Install requirements](flask_images/7installflask.png)
 
 </details>
@@ -186,11 +213,15 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 <h2 style="color:Green;">Run Python App</h2>
 
 <details>
-  <summary>11. App Running </summary>  
+  <summary>11. Run App </summary>  
 
 <br />
 
 > Fask1 > port: 40.67.149.37
+
+```bash
+python3 flaskapp.py
+```
 
 ![App Running](flask_images/8apprunning.png)
 
@@ -216,6 +247,12 @@ Instead of the video the screenshots will showcase the full lifecycle. I will tr
 <br />
 
 > Fask1 > port: 40.67.149.37
+
+
+```bash
+http://<Public-IP>:5003
+```
+
 
 ![Webpage display](flask_images/9webpageconfirmationonport500.png)
 
